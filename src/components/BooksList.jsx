@@ -46,8 +46,8 @@ export default function BookList() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
-      <h1 className="text-3xl font-bold text-center mb-6 text-black">
+    <div className="min-h-screen bg-slate-900 p-4">
+      <h1 className="text-3xl font-bold text-center mb-6 text-white">
         Library Books
       </h1>
       <div className="container mx-auto p-4">
@@ -57,7 +57,7 @@ export default function BookList() {
               {books.map((book) => (
                 <div
                   key={book.id}
-                  className="bg-gray-400 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow p-4"
+                  className="bg-slate-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow p-4"
                 >
                   <div className="h-40 w-full overflow-hidden rounded-md mb-4">
                     <Image
