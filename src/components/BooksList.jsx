@@ -47,7 +47,9 @@ export default function BookList() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4">
-      <h1 className="text-3xl font-bold text-center mb-6">Library Books</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-black">
+        Library Books
+      </h1>
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {books.length > 0 ? (
@@ -55,7 +57,7 @@ export default function BookList() {
               {books.map((book) => (
                 <div
                   key={book.id}
-                  className="bg-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow p-4"
+                  className="bg-gray-400 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow p-4"
                 >
                   <div className="h-40 w-full overflow-hidden rounded-md mb-4">
                     <Image
@@ -68,7 +70,7 @@ export default function BookList() {
                   </div>
                   <div className="mb-2">
                     <a
-                      className="text-xl font-semibold cursor-pointer"
+                      className="text-xl font-semibold cursor-pointer text-black"
                       href={`https://library-api-coral.vercel.app/api/books/${book.id}`}
                     >
                       {book.title}
