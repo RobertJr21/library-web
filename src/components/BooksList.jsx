@@ -70,7 +70,7 @@ export default function BookList() {
                   </div>
                   <div className="mb-2">
                     <a
-                      className="text-xl font-semibold cursor-pointer text-black"
+                      className="text-xl font-semibold cursor-pointer text-white"
                       href={`https://library-api-coral.vercel.app/api/books/${book.id}`}
                     >
                       {book.title}
